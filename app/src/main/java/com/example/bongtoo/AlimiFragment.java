@@ -34,6 +34,7 @@ import cz.msebera.android.httpclient.Header;
 
 
 public class AlimiFragment extends Fragment {
+    String test = "ok";
     String TAGURL;
     AlimiTag alimiTag;
     @Override
