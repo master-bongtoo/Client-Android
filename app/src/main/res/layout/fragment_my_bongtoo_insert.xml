@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/myBong_insert_imageProfile"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:padding="10dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/profile1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/myBong_insert_eTxtName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:hint="이름"
+                                android:inputType="textPersonName"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/myBong_insert_spinGroup"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:entries="@array/group_name" />
+
+                            <FrameLayout
+                                android:id="@+id/myBong_insert_BtnAddGroup"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    app:srcCompat="@drawable/icon_insert" />
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="#A6274555"
+                        android:gravity="center|left"
+                        android:padding="7dp"
+                        android:text="참석 여부"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/myBong_insert_checkBoxAttend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:text="참석"
+                            android:textColor="#88888D"
+                            android:textSize="12sp" />
+
+                        <CheckBox
+                            android:id="@+id/myBong_insert_checkBoxNotAttend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:text="불참"
+                            android:textColor="#88888D"
+                            android:textSize="12sp" />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:text="기타"
+                            android:visibility="invisible" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="#A6274555"
+                        android:gravity="center|left"
+                        android:padding="7dp"
+                        android:text="초대 방식"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/myBong_insert_checkBoxMobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:text="모바일"
+                            android:textColor="#88888D"
+                            android:textSize="12sp" />
+
+                        <CheckBox
+                            android:id="@+id/myBong_insert_checkBoxDirect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:text="직접 수령"
+                            android:textColor="#88888D"
+                            android:textSize="12sp" />
+
+                        <CheckBox
+                            android:id="@+id/myBong_insert_checkBoxEtc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:text="기타"
+                            android:textColor="#88888D"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="#A6274555"
+                        android:gravity="center|left"
+                        android:padding="7dp"
+                        android:text="장 소"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/myBong_insert_eTxtPlace"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="장소입력" />//04-01 청일
+                    android:inputType="textPersonName"
+                    android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="#A6274555"
+                        android:gravity="center|left"
+                        android:padding="7dp"
+                        android:text="날 짜"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/myBong_insert_eTxtDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:paddingLeft="5dp"
+                        android:text="2020. 04. 02"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="#A6274555"
+                        android:gravity="center|left"
+                        android:padding="7dp"
+                        android:text="금 액"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/myBong_insert_eTxtMoney"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+                                android:id="@+id/myBong_insert_BtnAdd10000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="#3CBFBFC1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:padding="10dp"
+                                        app:srcCompat="@drawable/icon_insert" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="10,000원"
+                                        android:textColor="#8F8B8B" />
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/myBong_insert_BtnAdd50000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="#3CBFBFC1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:padding="10dp"
+                                        app:srcCompat="@drawable/icon_insert" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="50,000원"
+                                        android:textColor="#8F8B8B" />
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/myBong_insert_BtnAdd100000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="#3CBFBFC1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:padding="10dp"
+                                        app:srcCompat="@drawable/icon_insert" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="100,000원"
+                                        android:textColor="#8F8B8B" />
+                                </LinearLayout>
+                            </FrameLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="#A6274555"
+                        android:gravity="center|left"
+                        android:padding="7dp"
+                        android:text="메 모"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/myBong_insert_eTxtMemo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="start|top"
+                        android:inputType="textMultiLine"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/myBong_insert_BtnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="#3CBFBFC1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="2dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="등 록" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/myBong_insert_BtnCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="#3CBFBFC1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="2dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="취 소" />
+                    </LinearLayout>
+                </FrameLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

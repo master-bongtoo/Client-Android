@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyPageFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/myinfo_layout_logout"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="로그인 후 이용하세요."
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/myinfo_layout_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <FrameLayout
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp">
+
+                    <ImageView
+                        android:id="@+id/myinfo_myimg"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="12dp"
+                        android:paddingBottom="5dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/profile1" />
+
+                    <ImageView
+                        android:id="@+id/myinfo_crown"
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center|right|top"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="centerInside"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/icon_crowntop_silver1" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#274555"
+                        android:gravity="center"
+                        android:text="   닉네임   "
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/myinfo_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#5ED5D3D3"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="호랑말코" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="#274555"
+                        android:gravity="center"
+                        android:text="내 정보"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#FFFFFF" />
+
+                    <FrameLayout
+                        android:id="@+id/myinfo_button1_setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#5ED5D3D3">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:text="회원 정보 설정"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="#274555" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center|right"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/icon_next" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/myinfo_button2_board"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="#5ED5D3D3"
+                            android:gravity="center"
+                            android:text="내가 작성한 글"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="#274555" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center|right"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/icon_next" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="#274555"
+                        android:gravity="center"
+                        android:text="고객 센터"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#FFFFFF" />
+
+                    <FrameLayout
+                        android:id="@+id/myinfo_button3_notice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:background="#5ED5D3D3"
+                            android:gravity="center"
+                            android:text="공지사항"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="#274555" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center|right"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/icon_next" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/myinfo_button5_question"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:background="#5ED5D3D3"
+                            android:gravity="center"
+                            android:scaleType="centerInside"
+                            android:text="1:1 문의"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="#274555" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center|right"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/icon_next" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/myinfo_button4_FAQ"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:background="#5ED5D3D3"
+                            android:gravity="center"
+                            android:text="자주 묻는 질문"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="#274555" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center|right"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/icon_next" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="#274555"
+                        android:gravity="center"
+                        android:text="버전 정보"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/myinfo_button6_version"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="#5ED5D3D3"
+                        android:gravity="center"
+                        android:text="1.0.0"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#274555" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

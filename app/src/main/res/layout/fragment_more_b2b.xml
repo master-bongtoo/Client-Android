@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MoreB2bFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/evaluation_image"
+                android:layout_width="wrap_content"
+                android:layout_height="350dp"
+                android:layout_gravity="top"
+                android:padding="20dp"
+                app:srcCompat="@drawable/image_b2bquestion" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/evaluation_subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:hint="제목은 20자 까지 입력 가능합니다."
+                    android:inputType="textPersonName"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <EditText
+                    android:id="@+id/evaluation_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="#5ED5D3D3"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="- 봉투 에 업체 등록 요청 제안이나 문의 사항을 등록해주세요!"
+                    android:inputType="textMultiLine"
+                    android:padding="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/evaluation_count"
+                    android:layout_width="371dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#5ED5D3D3"
+                    android:gravity="center|right"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="0 / 2000"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/evaluation_phon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="답변받을 휴대폰 번호"
+                    android:inputType="phone"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/evaluation_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:hint="답변받을 이메일주소"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/evaluation_button_confirm"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="#3CBFBFC1"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="문의 등록"
+                    android:textSize="12sp" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

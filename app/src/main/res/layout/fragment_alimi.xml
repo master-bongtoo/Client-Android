@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlimiFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="100dp">
+
+            <LinearLayout
+                android:id="@+id/alimi_noTagLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:id="@+id/alimi_BtnToInputTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:padding="2dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:padding="20dp"
+                        android:src="@drawable/icon_insert" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="알리미를 확인하려면 \n 관심 태그를 등록하세요."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textSize="12sp"
+                    app:lineHeight="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/alimi_inputTagLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_margin="10dp"
+                    android:background="#C4D5D3D3" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="설정한 관심 태그와 관련된 경조사를 확인할 수 있습니다."
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="최대 5개까지 관심 태그를 설정할 수 있어요."
+                    android:textSize="10sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_margin="10dp"
+                    android:background="#C4D5D3D3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="태그명"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/alimi_editTxtTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="태그를 입력하세요"
+                        android:inputType="textPersonName"
+                        android:textSize="12sp"
+                        android:windowSoftInputMode="adjustResize|adjustPan" />
+
+                    <FrameLayout
+                        android:id="@+id/alimi_BtnInputTag"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="#3CBFBFC1"
+                        android:padding="2dp">
+
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="추 가"
+                            android:textSize="12sp" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/alimi_tagView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#FBF2E4"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                        android:windowSoftInputMode="adjustResize|adjustPan" />
+
+                    <TextView
+                        android:id="@+id/alimi_tagView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#FBF2E4"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                        android:windowSoftInputMode="adjustResize|adjustPan" />
+
+                    <TextView
+                        android:id="@+id/alimi_tagView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#FBF2E4"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                        android:windowSoftInputMode="adjustResize|adjustPan" />
+
+                    <TextView
+                        android:id="@+id/alimi_tagView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#FBF2E4"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                        android:windowSoftInputMode="adjustResize|adjustPan" />
+
+                    <TextView
+                        android:id="@+id/alimi_tagView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#FBF2E4"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                        android:windowSoftInputMode="adjustResize|adjustPan" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/alimi_BtnTagSubmit"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="#3CBFBFC1"
+                        android:padding="2dp">
+
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="등 록"
+                            android:textSize="12sp" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/alimi_BtnTagCancel"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="#3CBFBFC1"
+                        android:padding="2dp">
+
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="취 소"
+                            android:textSize="12sp" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/alimi_listLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:id="@+id/alimi_btnGoInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:background="#3CBFBFC1"
+                    android:padding="2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="내 경조사 알리기"
+                        android:textSize="12sp" />
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#C4D5D3D3" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/tagView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/alimi_tag1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_margin="20dp"
+                                android:background="#FBF2E4"
+                                android:gravity="center|left"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textSize="12sp" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/alimi_listView1"
+                                android:layout_width="match_parent"
+                                android:layout_height="320dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_margin="10dp"
+                            android:background="#C4D5D3D3" />
+
+                        <LinearLayout
+                            android:id="@+id/tagView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/alimi_tag2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_margin="20dp"
+                                android:background="#FBF2E4"
+                                android:gravity="center|left"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textSize="12sp" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/alimi_listView2"
+                                android:layout_width="match_parent"
+                                android:layout_height="320dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_margin="10dp"
+                            android:background="#C4D5D3D3" />
+
+                        <LinearLayout
+                            android:id="@+id/tagView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/alimi_tag3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_margin="20dp"
+                                android:background="#FBF2E4"
+                                android:gravity="center|left"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textSize="12sp" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/alimi_listView3"
+                                android:layout_width="match_parent"
+                                android:layout_height="320dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_margin="10dp"
+                            android:background="#C4D5D3D3" />
+
+                        <LinearLayout
+                            android:id="@+id/tagView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/alimi_tag4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_margin="20dp"
+                                android:background="#FBF2E4"
+                                android:gravity="center|left"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textSize="12sp" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/alimi_listView4"
+                                android:layout_width="match_parent"
+                                android:layout_height="320dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_margin="10dp"
+                            android:background="#C4D5D3D3" />
+
+                        <LinearLayout
+                            android:id="@+id/tagView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/alimi_tag5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_margin="20dp"
+                                android:background="#FBF2E4"
+                                android:gravity="center|left"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textSize="12sp" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/alimi_listView5"
+                                android:layout_width="match_parent"
+                                android:layout_height="320dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_margin="10dp"
+                    android:background="#C4D5D3D3" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

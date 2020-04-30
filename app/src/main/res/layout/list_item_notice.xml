@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notis_contents"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:gravity="center|left"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/notice_item_txtSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center|left"
+        android:text="[공지] SKT 휴대폰 본인확인 서비스 중단 안내(3월 17일(수) ~ 18일(목))"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/notice_item_txtDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2020-03-17"
+        android:textColor="#99837E7E"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/notice_item_txtContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="TextView"
+        android:visibility="visible" />
+
+</LinearLayout>

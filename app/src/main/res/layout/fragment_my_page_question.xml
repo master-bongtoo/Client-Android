@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ildaeilmun-ui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/servicecenter_button1_gongsi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="공지사항"
+                        android:textColor="#99837E7E" />
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="3dp"
+                        android:layout_gravity="bottom"
+                        android:background="#99837E7E" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/servicecenter_button2_ildaeil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="1:1 문의"
+                        android:textColor="#274555" />
+
+                    <View
+                        android:id="@+id/view3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="3dp"
+                        android:layout_gravity="bottom"
+                        android:background="#274555" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/servicecenter_button3_faq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="자주 묻는 질문"
+                        android:textColor="#99837E7E" />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="3dp"
+                        android:layout_gravity="bottom"
+                        android:background="#99837E7E" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/question_eTxtSubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:hint="제목은 20자 까지 입력 가능합니다."
+                    android:inputType="textPersonName"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <FrameLayout
+                    android:id="@+id/question_BtnInsertFile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center|right"
+                        android:background="#3CBFBFC1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="2dp">
+
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="사진 첨부"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/question_ImageUpload"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <EditText
+                    android:id="@+id/question_eTxtContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#5ED5D3D3"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="-문의 내용을 자세히 작성해주시면 빠른 확인이 가능합니다."
+                    android:inputType="textMultiLine"
+                    android:padding="10dp"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/question_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#5ED5D3D3"
+                    android:gravity="center|right"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="0 / 2000"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="※ 문의하신 내용에 대한 원인 파악 및 원활한 상담을 위하여 이메일,휴대폰번호를 수집합니다. \n     수집된 개인정보는 문의 접수일 기준 3년간 보관 후 파기됩니다."
+                    android:textColor="#99837E7E"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/question_eTxtphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="답변받을 휴대폰 번호"
+                    android:inputType="phone"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/question_eTxtemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:hint="답변받을 이메일주소"
+                    android:inputType="textEmailAddress"
+                    android:textSize="14sp" />
+
+                <FrameLayout
+                    android:id="@+id/question_BtnSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp">
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:background="#274555"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="2dp">
+
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="문의 제출"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

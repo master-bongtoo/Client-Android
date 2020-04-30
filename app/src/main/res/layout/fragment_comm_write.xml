@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommWriteFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_commWrite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#C4D5D3D3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/commWrite_eTxtSubject"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:hint="제목은 20자 까지 입력 가능합니다."
+                        android:inputType="textPersonName"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+                                android:id="@+id/commWrite_button1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="#3CBFBFC1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:id="@+id/commWrite_text1"
+                                        android:layout_width="70dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="전 체"
+                                        android:textColor="#8F8B8B"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/commWrite_button2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="#3CBFBFC1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:id="@+id/commWrite_text2"
+                                        android:layout_width="70dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="자유게시판"
+                                        android:textColor="#8F8B8B"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/commWrite_button3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="#3CBFBFC1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:id="@+id/commWrite_text3"
+                                        android:layout_width="70dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="결혼식"
+                                        android:textColor="#8F8B8B"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/commWrite_button4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="#3CBFBFC1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:id="@+id/commWrite_text4"
+                                        android:layout_width="70dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="하객"
+                                        android:textColor="#8F8B8B"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+                                android:id="@+id/commWrite_button5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="#3CBFBFC1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:id="@+id/commWrite_text5"
+                                        android:layout_width="70dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="장례식"
+                                        android:textColor="#8F8B8B"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/commWrite_button6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="#3CBFBFC1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:id="@+id/commWrite_text6"
+                                        android:layout_width="70dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="돌잔치"
+                                        android:textColor="#8F8B8B"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/commWrite_button7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="#3CBFBFC1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:id="@+id/commWrite_text7"
+                                        android:layout_width="70dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="궁금해요"
+                                        android:textColor="#8F8B8B"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/commWrite_button8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="#3CBFBFC1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:id="@+id/commWrite_text8"
+                                        android:layout_width="70dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="TIP"
+                                        android:textColor="#8F8B8B"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#C4D5D3D3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|right"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/commWrite_photo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp">
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center|right"
+                            android:background="#3CBFBFC1"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="사진 첨부"
+                                android:textColor="#8F8B8B"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/commWrite_video"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp">
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center|right"
+                            android:background="#3CBFBFC1"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="동영상 첨부"
+                                android:textColor="#8F8B8B"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/commWrite_ImageUpload"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_margin="20dp"
+                        android:visibility="gone" />
+
+                    <VideoView
+                        android:id="@+id/commWrite_VideoUpload"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_margin="20dp"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/commWrite_eTxtContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#4BD5D3D3"
+                        android:ems="10"
+                        android:gravity="start|top"
+                        android:hint="내용은 2000자 까지 가능합니다."
+                        android:inputType="textMultiLine"
+                        android:padding="15dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    <TextView
+                        android:id="@+id/commWrite_TxtCurrentText"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="#4BD5D3D3"
+                        android:gravity="right"
+                        android:paddingRight="10dp"
+                        android:text="0 / 2000"
+                        android:textColor="#40443E3E" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/commWrite_BtnSubmit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="#274555"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="글 등록"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/commWrite_BtnCancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="#274555"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="취소"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

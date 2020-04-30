@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/FAQ"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/servicecenter_button1_gongsi"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="공지사항"
+                android:textColor="#99837E7E" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:layout_gravity="bottom"
+                android:background="#99837E7E" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/servicecenter_button2_ildaeil"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="1:1 문의"
+                android:textColor="#99837E7E" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:layout_gravity="bottom"
+                android:background="#99837E7E" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/servicecenter_button3_faq"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="자주 묻는 질문"
+                android:textColor="#274555" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:layout_gravity="bottom"
+                android:background="#274555" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <SearchView
+        android:id="@+id/searchview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/faq_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#3CBFBFC1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <TextView
+                        android:id="@+id/faq_1"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="전 체"
+                        android:textColor="#8F8B8B"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/faq_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#3CBFBFC1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <TextView
+                        android:id="@+id/faq_2"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="계정 문의"
+                        android:textColor="#8F8B8B"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/faq_button3"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#3CBFBFC1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <TextView
+                        android:id="@+id/faq_3"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="업체 제휴"
+                        android:textColor="#8F8B8B"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/faq_button4"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#3CBFBFC1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <TextView
+                        android:id="@+id/faq_4"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="고객의 소리"
+                        android:textColor="#8F8B8B"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/faq_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="55dp"
+        android:layout_weight="2"
+        android:dividerHeight="0.5dp" />
+
+</LinearLayout>

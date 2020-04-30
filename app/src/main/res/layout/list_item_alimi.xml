@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/alimi_frameimage"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="@drawable/card_wedding_frame">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="70dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/alimi_cardimage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/card_wedding" />
+
+            <TextView
+                android:id="@+id/alimi_TxtDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2020.05.25 토요일 낮 12시"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/alimi_TxtPlace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="초롱불웨딩컨벤션 2층 그랜드볼륨홀"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/alimi_TxtContent"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="#1BD5ABAB"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="성정중 3학년 1반 감자랑 2반 혀녕이랑 결혼한대"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

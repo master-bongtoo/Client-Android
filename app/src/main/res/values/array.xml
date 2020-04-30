@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="group_name">
+        <item>--선택--</item>
+        <item>친구</item>
+        <item>직장동료</item>
+        <item>동호회</item>
+        <item>기타</item>
+    </string-array>
+</resources>

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_community_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:id="@+id/layout_commList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ScrollView
+                android:id="@+id/mainScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <SearchView
+                            android:id="@+id/searchView"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#C4D5D3D3" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom|center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/commList_TxtCategory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:text="자유게시판  >  전체"
+                            android:textColor="#8F8B8B" />
+
+                        <FrameLayout
+                            android:id="@+id/commList_BtnGoWrite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:paddingTop="5dp"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/btn_go_write" />
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+                                android:id="@+id/commList_button1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="#3CBFBFC1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:id="@+id/commList_text1"
+                                        android:layout_width="70dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="전 체"
+                                        android:textColor="#8F8B8B"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/commList_button2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="#3CBFBFC1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:id="@+id/commList_text2"
+                                        android:layout_width="70dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="자유게시판"
+                                        android:textColor="#8F8B8B"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/commList_button3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="#3CBFBFC1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:id="@+id/commList_text3"
+                                        android:layout_width="70dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="결혼식"
+                                        android:textColor="#8F8B8B"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/commList_button4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="#3CBFBFC1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:id="@+id/commList_text4"
+                                        android:layout_width="70dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="하객"
+                                        android:textColor="#8F8B8B"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+                                android:id="@+id/commList_button5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="#3CBFBFC1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:id="@+id/commList_text5"
+                                        android:layout_width="70dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="장례식"
+                                        android:textColor="#8F8B8B"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/commList_button6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="#3CBFBFC1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:id="@+id/commList_text6"
+                                        android:layout_width="70dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="돌잔치"
+                                        android:textColor="#8F8B8B"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/commList_button7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="#3CBFBFC1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:id="@+id/commList_text7"
+                                        android:layout_width="70dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="궁금해요"
+                                        android:textColor="#8F8B8B"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/commList_button8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="#3CBFBFC1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:id="@+id/commList_text8"
+                                        android:layout_width="70dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="TIP"
+                                        android:textColor="#8F8B8B"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#BFBFC1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/commList_TxtListCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingLeft="5dp"
+                                android:text="총 8개"
+                                android:textColor="#8F8B8B" />
+
+                            <TextView
+                                android:id="@+id/commList_TxtSortNew"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="5dp"
+                                android:text="작성순으로 보기↑↓"
+                                android:textColor="#8F8B8B"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="?android:attr/listDivider" />
+
+                            <ListView
+                                android:id="@+id/commList_List"
+                                android:layout_width="match_parent"
+                                android:layout_height="520dp"
+                                android:dividerHeight="0.5dp" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
