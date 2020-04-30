@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //////////////////////////////////////////////////////////////////////////////////////
     /**전역 변수 설정**/
     /*Client Version*/
+    final String TEST = "test1";
     final String VERSION = "0.1.7";
     final String SERVERIP = "118.128.215.50:8080";
 
