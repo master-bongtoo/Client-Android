@@ -27,6 +27,7 @@ import cz.msebera.android.httpclient.Header;
 
 
 public class LoginFormFragment extends Fragment {
+    String rohwa;
     FrameLayout loginForm_BtnLogin, loginForm_BtnCancel, loginForm_BtnJoin;
     EditText loginform_id,loginform_pw;
     AsyncHttpClient client;
