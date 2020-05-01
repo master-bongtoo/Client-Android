@@ -13,6 +13,8 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
+    // ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+    String babo;
     /*Fragment*/
     LoginFormFragment loginFormFragment;
     /*layout*/
