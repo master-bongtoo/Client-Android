@@ -48,7 +48,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     /*Client Version*/
      final  int test = 0;
     final String VERSION = "0.1.7";
-    final String SERVERIP = "118.128.215.50:8080";
+    // 깃허브 업로드시 ip 0으로 수정
+    final String SERVERIP = "000.000.000.000:8080";
 
     /*레이아웃&헤더&푸터*/
     TextView txtTitle, main_nickname;
